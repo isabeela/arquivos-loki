@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loki  </title>
+    <link rel="icon" type="image/png" href="imagens/icone.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+   
+</head>
+<body>
+                                                                         
+
+    <section id="titulo">
+        <h1 class="titulo"> Selecione o personagem desejado </h1>
+    </section>
+
+    <section id="personagens">
+        <div class="personagem">
+            <img src="imagens/loki.jpg" class="img" id="loki" onclick="loki()">
+            <p> Loki </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/sylvie.jpg" class="img" onclick="sylvie()">
+            <p> Sylvie </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/mobius.jpg" class="img" onclick="mobius()">
+            <p> Mobius </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/ravona.jpg" class="img" onclick="ravonna()">
+            <p> Ravonna  </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/hunter.jpg" class="img" onclick="hunter()">
+            <p> B-15 </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/miss.jpg" class="img"  onclick="miss()">
+            <p> Srta Minutos </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/classico.jpg" class="img" onclick="classico()">
+            <p> Clássico Loki </p>
+        </div>
+        <div class="personagem">
+            <img src="imagens/kang.jpg" class="img"  onclick="kang()">
+            <p> Kang  </p>
+        </div>
+    </section>
+
+
+    <section id="carregar">
+        <div class="carregar-inicio">
+            <h1> Arquivos secretos </h1>
+        </div>
+        <div class="carregar">
+            <div class="loading">
+                <div class="loading-cor">
+                    Carregando...
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MODAL LOKI  -->
+
+    <div id="modal" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Loki Laufeyson </h3>
+                <button class="fechar"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/loki-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                
+                                Loki é o filho de Laufey, rei dos Gigantes de Gelo de Jotunheim, um dos Nove Reinos da cosmologia asgardiana. Após ver seu pai, Laufey, sendo assassinado por Odin, Loki ainda uma criança tenta atacar o assassino asgardiano, mas é agredido e levado para ser cuidado como um filho por Odin.
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                Suas habilidades incluem a capacidade de projetar rajadas poderosas energia, gerar campos de força hiper-resistentes, teletransportar-se a outras dimensões, criar ilusões realistas, dar vida a seres inanimados temporariamente, aprimorar os atributos físicos de humanos comuns como os criminosos Cobra e Sandu, sendo capaz de retirar esse poderes no tempo que precisar.
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                                “Eu sou um deus, criatura ridícula”
+                            </p>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL SYLVIE -->
+
+    <div id="modal-sylvie" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Sylvie Laufeydottir  </h3>
+                <button class="fecharModal"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/sylvie-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                Sylvie Laufeydottir, nascida Loki Laufeydottir, é uma variante da Loki Laufeyson que causou um evento Nexus quando criança e escapou da Autoridade da Variância do Tempo. Sylvie se escondeu através das linhas do tempo, enquanto buscava vingança contra a TVA e os Time-Keepers. 
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                Suas habilidades incluem sua tática estrategista, ótima em combate com e sem armas/espadas, além de saber muitas acrobacias 
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                                “Roubei um TemPad e fugi por muito tempo, o que foi chato”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <!-- MODAL MOBIUS -->
+
+    <div id="modal-mobius" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Mobius M. Mobius  </h3>
+                <button class="fecharX"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/mobius-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                Mobius M. Mobius é um ex-agente da Autoridade de Variância Temporal que se especializou na investigação e análise de criminosos do tempo particularmente perigosos. 
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                Mobius é considerado, mesmo pela Loki, incrivelmente inteligente e conhecedor do tempo e das muitas maneiras que ele pode impactar o passado, presente e futuro. Também  investigou várias anomalias temporais, tais como assassinatos e roubos para rastrear e capturar variantes temporais como Loki e tem a humildade de reconhecer que Loki tem um dom para a investigação.
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo">
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                               “É assim que é, é assim que foi, é assim que vai ser. Tudo para que os outros possam atingir a melhor versão de si mesmos.”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <!-- MODAL RAVONNA  -->
+
+     <div id="modal-ravonna" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Ravonna Renslayer </h3>
+                <button class="fecharR"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/ravonna-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                Ravonna Lexus Renslayer é uma juiza da Autoridade de Variação de Tempo que supervisionou o TVA em nome de He Who Remains. Nascida Rebecca Tourminet, ela era uma Variante de Tourminet que foi tomada pela TVA e teve suas memórias apagadas, tornando-se Caçadora A-23.
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                Como parte de seu treinamento militar como caçadora da Autoridade da Variância do Tempo, Renslayer tem habilidades de luta impressionantes, tendo um estilo de luta elegante e mínimo. No entanto, ela exibe essas habilidades com menos freqüência do que antes.
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo">
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                               “Alguém criou os Time-Keepers". Eles criaram todo este lugar. Eles nos deram todo o propósito. Eu tenho que acreditar que eles tinham uma razão.”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <!-- MODAL B15 -->
+
+     <div id="modal-hunter" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Hunter B-15 </h3>
+                <button class="fecharB"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/hunter-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                Hunter B-15 foi uma Variante que foi tomada por He Who Remains, uma organização que protege a Linha do Tempo Sagrado das Variantes, e teve sua memória reprimida para que pudesse ser membro da Autoridade da Variância do Tempo como Caçadora.
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                Hábil em múltiplas formas de combate, mantendo-se contra a Loki igualmente hábil com a ajuda de seu Time Stick, mas não o fazendo na segunda vez devido ao fato de a Loki ter conseguido usar um Time Twister para teletransportá-la para longe.
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo">
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                               “Em nome da Autoridade de Variação do Tempo, eu os prendo por crimes contra a Linha do Tempo Sagrada”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+       <!-- MODAL MISS -->
+
+       <div id="modal-miss" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Senhorita Minutos </h3>
+                <button class="fecharM"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/miss-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                 Senhorita Minutos é uma inteligência artificial criada por He Who Remains para observar e fornecer ajuda à Autoridade de Variação de Tempo. Servindo como mascote animada da TVA, ela espalhou a propaganda da organização para seus trabalhadores e Variantes, ao mesmo tempo em que servia como ligação entre He Who Remains e o Juiz Ravonna Renslayer da TVA.
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                Hábil em múltiplas formas de pesquisa de documentos e assustar as pessoas 
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo">
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                               “Heya'll”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL CLASSICO -->
+
+    <div id="modal-classico" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Loki Clássico  </h3>
+                <button class="fecharC"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/classico-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                Loki Laufeyson era uma variante da Loki que sobreviveu ao ataque de Thanos contra o estadista. Após a Guerra da Infinidade, o clássico Loki viveu em um planeta isolado por séculos antes de tentar se reunir com Thor, embora tenha sido podado pela Autoridade da Variância do Tempo e enviado para o Vazio. 
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                               Capacidade de projetar rajadas poderosas energia, gerar campos de força hiper-resistentes, teletransportar-se a outras dimensões, criar ilusões realistas, dar vida a seres inanimados temporariamente.
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo">
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                               “Por que você usa os chifres? Você deixa uma criança mandar em você”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+      <!-- MODAL KANG -->
+
+      <div id="modal-kang" class="modal-container">
+        <div class="modalpopup">
+            <div class="topo-form">
+                <h3> Aquele que Permanece </h3>
+                <button class="fecharK"> X </button>
+           
+                <div class="informacoes">
+                    <div class="foto">
+                        <img src="imagens/kang-modal.jpg" class="foto-modal">
+                    </div>
+                    <div class="dados">
+
+                        <div class="sobre">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> SOBRE </span>
+                                </div>
+                                Foi o primeiro que entrou em contato com universos alternativos e outras Variantes de si mesmo. Quando algumas dessas Variantes tentaram conquistar outras realidades, seguiu-se uma Guerra Multiversal, que  terminou com o armamento do Alioth. Ele fundou e governou a TVA para preservar a Linha do Tempo Sagrada e impedir a ascensão de suas contrapartes.
+                            </p>
+                        </div>
+                        <div class="habilidades">
+                            <p class="conteudo"> 
+                                <div class="titulo-conteudo">
+                                    <span> HABILIDADES </span>
+
+                                </div>
+                            
+                                 Criação da TVA, desenvolveu os protocolos para identificar "Eventos Nexus" e evitar que eles causassem novas linhas de tempo para se ramificarem.
+                            </p>
+        
+                        </div>
+                        <div class="frase">
+                            <p class="conteudo">
+                                <div class="titulo-conteudo">
+                                    <span> FRASE </span>
+                                </div>
+                            
+                               “Cada passo que você deu para chegar aqui, Lamentis, o Vazio, eu pavimentei a estrada. Você... você simplesmente andou por ela”
+                            </p>
+        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
